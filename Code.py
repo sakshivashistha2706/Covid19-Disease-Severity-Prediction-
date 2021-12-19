@@ -17,6 +17,9 @@ data.head()
 data=data.iloc[:,[0,1,2,3,4,5,6,7,8]] 
 print(data)
 
+#LOOKING FOR NULL VALUES
+data.isnull().sum()
+
 #HEAT MAP VISUALIZATION
 sns.heatmap(data.corr(),annot= True)
 
